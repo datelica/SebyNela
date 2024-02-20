@@ -1,0 +1,196 @@
+/* ----------------------------------
+	CONTACT SECTION STYLEING
+ ------------------------------------ */
+.contact-wrapper{
+    &.content-1{
+        position: relative;
+        .contact-img{
+            position: absolute;
+            bottom: 0;
+            width: 335px;
+            z-index: -1;
+            height: auto;
+            left: 6%;
+
+            @media(max-width: 1500px){
+                left: 0;
+            }
+            @media(max-width: 1020px){
+                display: none;
+            }
+        }
+        .shape-element{
+            left: 18%;
+            position: absolute;
+            top: calc(30% + 20px);
+            animation:  right-to-left 4s ease-in-out infinite;
+
+            @media(max-width: 1020px){
+                display: none;
+            }
+        }
+    }
+    .location-map{
+        iframe{
+            width: 100%;
+        }
+    }
+
+    .res-column{
+        @media(max-width: 767px){
+            margin-top: 60px;
+        }
+    }
+
+    .contact-left{
+        margin-right: 40px;
+        @media(max-width: 767px){
+            margin-right: 0;
+        }
+    }
+
+    .contact-right{
+        position: relative;
+
+        .img{
+            display: inline-block;
+            position: absolute;
+            left: -18%;
+            top: 15%;
+
+            @media(max-width: 1200px){
+                left: -30%;
+            }
+        }
+    }
+}
+.single-contact-left{
+    max-width: 650px;
+    margin-left: 40%;
+    .section-title{
+        h2{
+            font-family: 'Pathway Extreme';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 68px;
+            color: $white;
+            text-shadow: -1px 1px 0 $black,
+                          1px 1px 0 $black,
+                         1px -1px 0 $black,
+                        -1px -1px 0 $black;
+            text-transform: capitalize;
+        }
+        @media(max-width: 767px){
+            h2{
+                font-size: 40px;
+                line-height: 52px;
+            }
+        }
+    }
+    .link-custome{
+        ul>li{
+            
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px 0px;
+            border-bottom: 1px solid $primary;
+            a{
+                display: block;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 34px;
+                color: $primary;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    @media(max-width: 1020px){
+        margin-left: 1%;
+    }
+    @media(max-width: 800px){
+        margin-left: 0;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+.single-contact-right{
+    height: 650px;
+
+}
+
+/* ----------------------------------
+	CONTACT-2 SECTION STYLEING
+ ------------------------------------ */
+ .contact-info{
+    a{
+        display: block;;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 34px;
+        color: $primary;
+        padding: 30px 0px;
+        border-bottom: 1px solid $primary;
+        img{
+            margin-right: 10px;
+        }
+    }
+ }
+ .contact-right{
+    .form-group{
+        label{
+            font-family: 'Pathway Extreme';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #212121;
+            margin-bottom: 5px;
+        }
+        input[type="text"],input[type="email"]{
+            background-color: transparent;
+            height: 50px;
+            color: $text;
+            border-bottom: 1px solid #777 !important;
+            border-radius: 0px !important;
+
+            &:active, &:focus{
+                border: 1px solid $primary !important;
+                border-radius: 5px !important;
+            }
+        }
+        textarea{
+            background-color: transparent;
+            color: $text;
+            width: 100%;
+            border: none;
+            border-radius: 0px !important;
+            &:focus{
+                outline: none;
+                border: none;
+            }
+        }
+        small{
+            border-top: 1px solid #212121 !important;
+            display: block;
+        }
+        .form-control{
+            border:none !important;
+        }
+        .form-control:focus {
+            outline: 0px solid rgba(0, 0, 0, 0.15) !important;
+            border: 0px solid rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 0 0 !important;
+        }
+        .form-group{
+            
+            button{
+                display: inline-block;
+            }
+        }
+    }
+ }

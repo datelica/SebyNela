@@ -1,0 +1,158 @@
+/* ----------------------------------
+	PRICE SECTION STYLEING
+ ------------------------------------ */
+.pricing-row{
+    background-color: $white;
+
+    .single-price-card{
+        position: relative;
+        padding: 50px 40px;
+        @include transition(0.4s);
+        .price-head{
+            padding-bottom: 10px;
+            span{
+                @include transition(0.4s);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 43px;
+                text-transform: uppercase;
+                color: #AEF238;
+                small{
+                    color: #777777;
+                }
+            }
+            border-bottom: 2px solid $black;
+            .populer{
+                position: absolute;
+                z-index: 1;
+                top: -10px;
+                right: -10px;
+                .save{
+                    position: relative;
+                    background-color: $black;
+                    p{
+                        color: $secondary;
+                        padding: 0px 10px;
+                    }
+                    &::after{
+                        content: '';
+                        clear: both;
+                        z-index: 60px;
+                        bottom: -10px;
+                        right: 0px;
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        background: $black;
+                        clip-path: polygon(100% 0, 0 0, 0 100%);
+                    }
+                }
+            }
+        }
+        .price-body{
+            margin-top: 30px;
+            ul>li{
+                display: block;
+                @include transition(0.4s);
+                margin: 15px 0px;
+                padding-left: 30px;
+                position: relative;
+
+                span.price_icn {
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid $primary;
+                    text-align: center;
+                    line-height: 14px;
+                    font-size: 8px;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+            }
+            
+            .price-btn{
+                margin-top: 30px;
+                a{
+                    width: 184px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 184px;
+                    border-radius: 500px;
+                    border: 1px solid $primary;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .popular{
+        background-color: $secondary;
+        z-index: 20;
+        padding: 50px;
+        
+        .price-head{
+            span{
+                color: $black;
+            }
+        }
+        .price-body{
+            ul>li{
+                color: $black;
+            }
+        }
+    }
+}
+
+
+
+/* ----------------------------------
+	SKILL SECTION STYLEING
+ ------------------------------------ */
+
+ .skill-wrapper{
+    &.skill-2{
+        background-color: #F5FBEC;
+    }
+ }
+ .progess-elememt{
+    h5{
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        color: $primary;
+    }
+ }
+ .progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 2px;
+    align-items: center;
+    position: relative;
+    border: 1px solid $black;
+    display: flex;
+    height: 20px;
+    // width: 90%;
+    
+
+    .progress-value {
+        box-shadow: 0 10px 40px -10px $white;
+        background: $secondary;
+        height: 30px;
+        animation-name: progress-bar;
+        animation-duration: 3s;
+        animation-delay: 2s;
+    }
+  }
+  @keyframes progress-bar {
+    0%   {width: 0;}
+    100% {width: 90%;}
+  }
+
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 68%; }
+  }

@@ -1,0 +1,104 @@
+/* ----------------------------------
+	CTA SECTION STYLEING
+ ------------------------------------ */
+.cta-wrapper{
+    .cta-widget{
+        overflow: hidden;
+        border: 1px solid $primary;
+        padding: 70px 40px;
+        position: relative;
+        .dot-element-1{
+            position: absolute;
+            top: 20px;
+            left: 80px;
+            z-index: -1;
+            animation: left-to-right 4s ease-in-out infinite;
+        }
+        .dot-element-2{
+            position: absolute;
+            bottom: 20px;
+            left: 64%;
+            z-index: -1;
+            animation: left-to-right 4s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+        .line-element-1{
+            position: absolute;
+            bottom: -40%;
+            left: -40%;
+            z-index: -1;
+        }
+        .line-element-2{
+            position: absolute;
+            top: 10%;
+            right: -27%;
+            z-index: -1;
+            @media (max-width:1030px) {
+                right: -42%;
+            }
+        }
+        .sercle-1{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: $secondary;
+            bottom: 20px;
+            left: 30px;
+            animation: circle 8s ease-in-out infinite;
+        }
+        .sercle-2{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: $secondary;
+            top: 20px;
+            right: 30px;
+            animation: circle 8s ease-in-out infinite;
+        }
+
+        @media(max-width: 767px){
+            padding: 70px 30px;
+        }
+    }
+    .cta-left{
+        h2{
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 68px;
+            text-transform: capitalize;
+            color: $primary;
+            span{
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 68px;
+                color: #fff;
+                text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+                text-transform: capitalize;
+            }
+            @media(max-width: 991px){
+                font-size: 40px;
+                line-height: 48px;
+    
+                span{
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+            }
+        }
+        
+    }
+}
+
+.cta-wrapper-home-1{
+    .cta-widget{
+        .line-element-1{
+            bottom: -70%;
+            left: 0;
+        }
+        .vector-img{
+            position: absolute;
+            bottom: 0;
+            left: 45%;
+        }
+    }
+}

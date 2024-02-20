@@ -1,0 +1,83 @@
+/*
+    Template: Nahla - Multipurpose Bootstrap 5 Template
+    Author: RRDevs
+    Author URI: https://themeforest.net/user/rrdevs
+    Description: Multipurpose Bootstrap 5 Template
+    Version: 1.0.0
+*/
+
+// BASIC
+@import 'basic';
+
+//MIXIN
+@import 'variables';
+
+//TYPOGRAPHY
+@import 'typography';
+
+// MIX
+@import 'mix';
+
+// HELPER
+@import 'helper';
+
+// ANIMATION
+@import 'animation';
+
+//Button 
+@import 'btn';
+
+// Preloader 
+@import 'preloader';
+
+/* ----------------------------------
+    Template Section Styles
+ ------------------------------------*/
+
+//Menu - Header Section 
+@import 'header';
+
+// Hero Slide - Section 
+@import 'hero';
+
+// Contact - Section  
+@import 'contact';
+
+// About - Section 
+@import 'about';
+
+// services - Section 
+@import 'service';
+
+// testimonial - Section 
+@import 'testimonials';
+
+// Portfolio- Section 
+@import 'portfolio';
+
+// Price Table - Section 
+@import 'price';
+
+// Call To Action - Section 
+@import 'cta';
+
+// WE_DO - Section 
+@import 'wi_do.scss';
+
+// team - Section 
+@import 'team';
+
+// Case - Section 
+@import 'case';
+
+// carousel - Section 
+@import 'carousel';
+
+// FAQ - Section 
+@import 'faq';
+
+// Blog - Section 
+@import 'blog';
+
+// footer - Section 
+@import 'footer';

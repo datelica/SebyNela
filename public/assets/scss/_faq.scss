@@ -1,0 +1,88 @@
+/* ----------------------------------
+	FAQ SECTION STYLEING
+ ------------------------------------ */
+ .faq-left-widget{
+    @media (max-width: 991px){
+        text-align: center;
+    }
+ }
+
+ .faq-right-widget{
+    .accordion-item{
+        background: transparent;
+        border-bottom:1px solid rgba(33, 33, 33, 0.1);
+        border-left:none !important;
+        border-right: none  !important;
+        border-top: none  !important;
+        border-radius: 0px !important;
+        h5{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+            color: $primary;
+            padding: 10px 0px;
+            button{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 30px;
+                color: $primary;
+                padding: 10px 0px 10px 30px;
+                background: transparent;
+                &:hover,&:focus{
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                }
+                &::after{
+                    flex-shrink: 0;
+                    position: absolute;
+                    left: 0;
+                    color: $text;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 500px;
+                    border: 1px solid #000;
+                    margin-left: auto;
+                    content: "\f105";
+                    font-size: 12px;
+                    line-height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: $fa;
+                    background-image:none !important;
+                    @include transition(0.4s);
+                }
+            }
+            .accordion-button:not(.collapsed){
+                box-shadow: none;
+            }
+            .accordion-button:not(.collapsed)::after {
+                background-image: none;
+                transform: rotate(90deg);
+                background-color: $secondary;
+                color: $primary;
+            }
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+        p{
+            padding: 0px 0px 20px 35px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #777777;
+        }
+    }
+    @media (max-width: 991px){
+        margin-top: 60px;
+    }
+
+    &.faq-right-widget-home-3{
+        @media(max-width: 767px){
+            margin-top: 30px;
+        }
+    }
+}

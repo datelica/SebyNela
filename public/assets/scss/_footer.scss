@@ -1,0 +1,335 @@
+/* ----------------------------------
+	footer Section Styles
+ ------------------------------------ */
+ footer{
+	position: relative;
+	z-index: 1;
+	&.footer-1{
+		padding-top: 60px;
+		background-color: $primary;
+		background-image: url(../img/footer.png);
+
+		@media(max-width: 767px){
+			padding-top: 20px;
+		}
+	}
+	.single_footer{
+		h4{
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 27px;
+			text-transform: capitalize;
+			color: $white;
+			margin-bottom: 20px;
+		}
+		p{
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 30px;
+			color: rgba(255, 255, 255, 0.6);
+		}
+		.icon-left{
+			margin-top: 40px;
+			li{
+				>a{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 45px;
+					height: 45px;
+					border-radius: 500px;
+					background: rgba(255, 255, 255, 0.1);
+					gap: 20px;
+					i{
+						color: $text;
+						font-size: 20px;
+					}
+					&:hover{
+						background: $secondary;
+						color: #000;
+						i{
+							color: $primary;
+						}
+					}
+				}
+			}
+		}
+		&.footer-link-2{
+			ul{
+				>li{
+					display: block;
+					padding: 10px;
+					a{
+						text-align: left;
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 30px;
+						text-decoration-line: underline;
+						color: rgba(255, 255, 255, 0.6);
+						padding-left: 30px;
+						@include transition(0.4s);
+						&:hover{
+							color: $secondary;
+						}
+					}
+					p{
+						color: rgba(255, 255, 255, 0.6);
+						padding-left: 30px;
+						@include transition(0.4s);
+						&:hover{
+							color: $secondary;
+						}
+					}
+					&:nth-child(1){
+						a{
+							&::after{
+								clear: both;
+								display: block;
+								content: "\f0e0";
+								font-family: $fa;
+								font-size: 18px;
+								font-weight: 500;
+								position: absolute;
+								left: 0;
+								top: 0;
+							}
+						}
+					}
+					&:nth-child(2){
+						a{
+							&::after{
+								clear: both;
+								display: block;
+								content: "\f2a0";
+								font-family: $fa;
+								font-size: 18px;
+								font-weight: 900;
+								position: absolute;
+								left: 0;
+								top: 0;
+							}
+						}
+					}
+					&:nth-child(3){
+						p{
+							&::after{
+								clear: both;
+								display: block;
+								content: "\f3c5";
+								font-family: $fa;
+								font-size: 18px;
+								font-weight: 600;
+								position: absolute;
+								left: 15px;
+        						top: 10px;
+
+								@media(max-width: 767px){
+									left: 0;
+								}
+							}
+						}
+					}
+
+					@media(max-width: 767px){
+						padding: 10px 0;
+					}
+				}
+			}
+		}
+		&.footer-link{
+			ul{
+				>li{
+					display: block;
+					padding: 10px 0px;
+					color: rgba(255, 255, 255, 0.6);
+					a{
+						padding: 10px 0px;
+						text-align: left;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 30px;
+						color: rgba(255, 255, 255, 0.6);
+						@include transition(0.4s);
+						&:hover{
+							color: $secondary;
+						}
+					}
+				}
+			}
+		}
+		.footer-bootm-link{
+			ul >li{
+				display: inline-block;
+				padding: 0px;
+				font-size: 14px;
+				color: rgba(255, 255, 255, 0.6);
+				a{
+					color: $text;
+					font-size: 14px;
+					padding: 0px 8px 0 04px;
+					&:hover{
+						color: $secondary;
+					}
+				}
+			}
+		 }
+	}
+	.line-element-1,.line-element-2,.dot-element-1,.dot-element-2{
+		position: absolute;
+		z-index: -1;
+	}
+	.line-element-1{
+		top: 10%;
+		left: 0;
+		opacity: .3;
+	}
+	.line-element-2{
+		bottom: 10%;
+		right: 0%;
+		opacity: .3;
+	}
+	.dot-element-1{
+		top: 10%;
+		left: 0;
+		animation: top-to-bottom 4s ease-in-out infinite;
+	}
+	.dot-element-2{
+		bottom: 10%;
+		right: 0%;
+		animation: top-to-bottom 6s ease-in-out infinite;
+	}
+ }
+
+ .newsletter_box  {   
+    margin-top: 10px;
+	margin-bottom: 20px;
+	&.about-right{
+		form {            
+			height: 60px;
+			display: flex; 
+			position: relative;
+			border-radius: 140px;
+			border: 1px solid#212121;
+			overflow: hidden;
+			@media (max-width: 480px) {
+				height: 50px;
+			}
+			input{
+				border-radius: 5px;
+				border: 2px solid rgba(255, 255, 255, 0.10);
+				color: $primary;
+			}
+			button {
+				right: 0;
+				padding: 20px;
+				top: 0;
+				font-size: 18px;
+				line-height: 25px;
+				background-color: #AEF238;
+	
+				@media (max-width: 480px) {
+					right: 5px;
+					font-size: 13px;
+					line-height: 20px;
+					padding: 6px 10px;
+					top: calc(50% - 16px);
+				}
+	
+				i {
+					font-size: 18px;
+					color: $primary;
+					@media (max-width: 480px) {
+						font-size: 13px;
+						margin-left: 5px;
+					}
+				}
+	
+				&:hover {
+					color: $white;
+					background-color: $primary;
+				}
+			}
+		}
+	}
+	form {            
+		height: 61px;
+		display: flex; 
+		position: relative;
+		
+		@media (max-width: 480px) {
+			height: 50px;
+		}
+
+		input {
+			width: 100%;
+			color: $white;
+			font-size: 16px;
+			line-height: 19px;
+			border-radius: 2px;
+			background: transparent;
+			padding: 21px 50px 21px 20px;
+			border: 2px solid rgba(255, 255, 255, 0.10);
+			@media (max-width: 480px) {
+				font-size: 14px;
+				padding: 16px 148px 16px 15px;
+			}
+
+			&::placeholder {
+				color: $text;
+			}
+		}
+
+		button {
+			border: 0;
+			right: 9px;
+			color: $white;
+			font-size: 15px;
+			line-height: 22px;
+			font-weight: 500;
+			position: absolute;
+			font-family: $body-font;
+			border-radius: 2px;
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 9.5px 18px;
+			top: calc(50% - 21.5px);
+			background-color: transparent;
+			transition: all 0.4s ease-in-out;
+
+			@media (max-width: 480px) {
+				right: 5px;
+				font-size: 13px;
+				line-height: 20px;
+				padding: 6px 10px;
+				top: calc(50% - 16px);
+			}
+
+			i {
+				font-size: 16px;
+				color: $secondary;
+				@media (max-width: 480px) {
+					font-size: 13px;
+					margin-left: 5px;
+				}
+			}
+
+			&:hover {
+				color: $white;
+				background-color: $primary;
+			}
+		}
+	}
+}
+.footer-bottom{
+	p{
+		margin-top: 20px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		color: #FFFFFF;
+		a{
+			color: $secondary;
+			font-size: 16px;
+		}
+	}
+}
